@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flat color</title>
+	<style type="text/css">
+	body
+	{
+		height: 100vh;
+		width: 100vw;
+		margin: 0px;
+	}
+	table 
+	{
+		height: 100%;
+		width: 100%;
+		border-spacing:0px;
+		border-collapse: collapse;
+	}
+	table tr td
+	{
+		padding: 0px;
+	}
+
+	div
+	{
+		height:100%;
+		width: 100%;
+		text-align:  center;
+		color: #FFF;
+		font-weight: bold;
+		padding-top:25%;
+		margin:0px;
+		text-transform: uppercase;
+	}
+	
+	table tr td:hover
+	{
+		box-shadow: rgb(0,0,0) -3px -3px 6px;
+		transform: translate(5px , 2px);
+	}
+
+</style>
+
+<script type="text/javascript">
+	window.onload= function(){
+		
+		function copyToClipboard(text) {
+		    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+		}
+		
+		var elem = document.getElementsByTagName("div");
+		[].slice.call(elem).forEach(
+			function(a){ 
+				a.addEventListener("click", 
+					function(){ 
+						copyToClipboard(this.innerHTML)
+					});
+			})
+	};
+</script>
+
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<div style="background: #1ABC9C;"> #1ABC9C</div>
+			</td>
+			<td>
+				<div style="background:#2ecc71; ">#2ecc71</div>
+			</td>
+			<td>
+				<div style="background:#3498db;">#3498db</div>
+			</td>
+			<td>
+				<div style="background:#9b59b6;">#9b59b6</div>
+			</td>
+			<td>
+				<div style="background:#34495e;">#34495e</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="background:#16a085">#16a085</div>
+			</td>
+			<td>
+				<div style="background:#2cc36b">#2cc36b</div>
+			</td>
+			<td>
+				<div style="background:#2980b9">#2980b9</div>
+			</td>
+			<td>
+				<div style="background:#8e44ad">#8e44ad</div>
+			</td>
+			<td>
+				<div style="background:#2c3e50">#2c3e50</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="background:#f1c40f">#f1c40f</div>
+			</td>
+			<td>
+				<div style="background:#e67e22">#e67e22</div>
+			</td>
+			<td>
+				<div style="background:#e74c3c">#e74c3c</div>
+			</td>
+			<td>
+				<div style="background:#ecf0f1">#ecf0f1</div>
+			</td>
+			<td>
+				<div style="background:#95a5a6">#95a5a6</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="background:#f39c12">#f39c12</div>
+			</td>
+			<td>
+				<div style="background:#d35400">#d35400</div>
+			</td>
+			<td>
+				<div style="background:#c0392b">#c0392b</div>
+			</td>
+			<td>
+				<div style="background:#bdc3c7">#bdc3c7</div>
+			</td>
+			<td>
+				<div style="background:#7f8c8d">#7f8c8d</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
